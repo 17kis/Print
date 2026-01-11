@@ -1,0 +1,16 @@
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f4f7f6; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+h2 { text-align: center; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+
+.config-panel { margin: 20px 0; padding: 15px; background: #e8f4fd; border-radius: 8px; }
+select { padding: 8px; border-radius: 4px; border: 1px solid #ddd; width: 250px; }
+
+.upload-area { border: 2px dashed #3498db; padding: 40px; text-align: center; cursor: pointer; transition: 0.3s; margin-bottom: 20px; }
+.upload-area:hover { background: #f0f9ff; border-color: #2980b9; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th { background: #f8f9fa; text-align: left; padding: 12px; border-bottom: 2px solid #eee; }
+td { padding: 12px; border-bottom: 1px solid #eee; }
+
+.summary { margin-top: 30px; text-align: right; padding: 20px; border-top: 2px solid #2c3e50; }
+.final-price { font-size: 24px; color: #e74c3c; font-weight: bold; }
