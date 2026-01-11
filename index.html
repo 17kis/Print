@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>打印店计费工具</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>🖨️ 打印计费自动核算系统</h2>
+        
+        <div class="config-panel">
+            <label>打印选项：</label>
+            <select id="printType">
+                <option value="bw_double">黑白 - 双面 (0.05/面)</option>
+                <option value="bw_single">黑白 - 单面 (0.07/张)</option>
+                <option value="color_double">彩色 - 双面 (0.3/面)</option>
+                <option value="color_single">彩色 - 单面 (0.35/张)</option>
+            </select>
+        </div>
+
+        <div class="upload-area" id="dropZone">
+            <p>拖拽文件到此处 或 <span>点击上传 PDF</span></p>
+            <input type="file" id="fileInput" multiple accept=".pdf" style="display:none">
+        </div>
+
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>文件名</th>
+                    <th>页数</th>
+                    <th>单价(张/面)</th>
+                    <th>小计</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="summary">
+            <p>文件总数: <span id="totalFiles">0</span></p>
+            <p>总计页数: <span id="totalPages">0</span></p>
+            <div class="final-price">最终报价: ￥<span id="finalAmount">0.00</span></div>
+            <p style="color: #666; font-size: 0.8em;">* 量大请联系客服谈价</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
